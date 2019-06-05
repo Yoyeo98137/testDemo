@@ -1,0 +1,78 @@
+#rig-fixed {       /* 右侧固定栏 */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 35px;
+    height: 100%;
+    background: #000000;
+    z-index: 999;
+    display: flex;  /* * */ 
+}
+#rig-fixed li:hover { background: #ff3600; cursor: pointer; }
+#rig-fixed span { font-size: 13px; color: #fff; }
+#rig-fixed #fixed-top {
+    width: inherit;
+    height: 382px;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */  /* ie9以下不兼容 */
+    margin: auto;   /* * */   /* 同样有兼容性问题 */
+}
+#rig-fixed #fixed-top li {
+    margin-bottom: 6px;
+}
+#rig-fixed #fixed-top li .fixed-gwc {
+    width: 26px;
+    margin-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 8px;
+    border-top: 1px rgba(255, 255, 255,0.3) solid; 
+    border-bottom: 1px rgba(255, 255, 255,0.3) solid; 
+}
+#rig-fixed #fixed-top li .fixed-gwc img { margin-left: -3px; }
+#rig-fixed #fixed-top li .fixed-gwc span { 
+    display: block;
+    width: 13px;
+    margin: 0 auto;  
+    line-height: 18px;  
+    font-size: 13px;
+    margin-top: -5px;
+}
+#rig-fixed #fixed-foot {
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    height: 130px;
+}
+#rig-fixed #fixed-foot ul { margin-top: 16px; }
+
+#fixed-top #fixed-hyqy {
+    opacity: 0;
+    width: 95px;
+    height: 37px;
+    background: #494949;
+    position: absolute;
+    left: -140px;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.4s;
+}
+#fixed-top #fixed-hyqy span { position: absolute; top: 9px; right: 21px; }
+#fixed-top #fixed-hyqy:after {
+    content: "";
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color:transparent transparent transparent #494949;
+    border-style:solid dashed dashed dashed;
+    border-width: 10px;
+    position: absolute;
+    top: 8px; 
+    left: 95px;
+    z-index: 998;
+}
+#hddb {
+    display:none;
+}

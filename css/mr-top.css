@@ -1,0 +1,331 @@
+/* 头部 */
+#header {
+    width: 100%;
+    height: 165px;
+    background: #ffffff;
+    border-bottom: 2px #ff0036 solid;
+    position: relative;
+}
+#header #header-max {  /* 居中容器 */ 
+    width: 1300px;
+    height: inherit;
+    margin: 0px auto;
+    position: relative;
+}
+#header #header-max img {
+    position: absolute;
+    left: -18px;
+    cursor: pointer;
+    width: 280px;
+}
+#header-max #hea-cont {   /* 输入框容器 */
+    width: 680px;
+    height: 38px;
+    position: relative;
+    top: 38px;
+    left: 337px;
+}
+#header-max #hea-cont input {
+    width: 570px;
+    height: inherit;
+    border: 2px #ff0036 solid;
+    padding-left: 6px;
+    color: #000;
+    position: relative;
+    left: -50px;
+}
+#hea-cont input::-webkit-input-placeholder { /* WebKit browsers * 输入框默认显示文字颜色 */
+    color: #ebebeb;
+    font-size: 16px;
+}
+  
+#hea-cont input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ebebeb;
+    font-size: 16px;
+}
+  
+#hea-cont input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ebebeb;
+    font-size: 16px;
+} 
+#hea-cont input:focus { outline: none; }
+#header-max #hea-cont span {
+    width: 110px;
+    padding: 9px;
+    background: #ff0036;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: -3px;
+    cursor: pointer;
+    letter-spacing: 6px;  /* 字体间距 */
+    position: absolute;
+    right: 0px;
+}
+#header-max #hea-cont ul {
+    position: absolute;
+    top: 50px;
+    left: 3px;
+    width: 660px;
+    height: 40px;
+}
+#header-max #hea-cont li {
+    float: left;
+    border-right: 1px #cacaca solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#header-max #hea-cont li:first-child { padding-left: 0px; }
+#header-max #hea-cont li:last-child { border-right: 0px; }
+#header-max #hea-cont li a { font-size: 15px; color: #b2b2b2 }
+#header-max #hea-cont li.redtext a { color: #ff0036; }   /* li.redtext */ 
+
+
+#header #header-max #hea-nav {   /* 导航栏容器 */
+    width: 100%;
+    height: 36px;
+    position: relative;
+    top: 91px;
+}
+ /* #header #header-max #hea-nav img { width: 120px;}  */
+#hea-nav #hea-nav-left {    /* 商品分类 */
+    float: left;
+    background: #ff0036;
+    width: 200px;
+    height: inherit; 
+    margin-left: 20px;
+}
+#hea-nav #hea-nav-left span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+    padding-right: 40px;
+}
+#hea-nav ul {
+    margin-left: 240px;
+    width: 780px;
+    height: inherit;
+}
+#hea-nav ul .img-tmcs {
+    margin-top: 4px;
+    margin-left: -8px;
+    margin-right: 12px;
+    width: 86px;
+    height: 20px;
+    background: url(F:\MyTMALL/img/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png) no-repeat;
+    background-size: 100%;
+}
+#hea-nav ul .img-tmgj {
+    margin-top: 4px;
+    margin-right: 8px;
+    width: 86px;
+    height: 20px;
+    background: url(F:\MyTMALL/img/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png) no-repeat;
+    background-size: 100%;
+}
+#hea-nav ul li {
+    margin-top: 1px;
+    padding: 7px;
+    float: left;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+#hea-nav ul li:first-child { padding-left: 13px; }
+#hea-nav ul li:hover { color: #ff0036;}
+
+/* 商品分类下透明栏 */
+#hea-nav-spfl {
+    width: 200px;
+    height: 500px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 20px;
+    top: 38px;
+    z-index: 997;
+}
+#hea-nav-spfl ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#hea-nav-spfl ul li {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    line-height: 15px;
+    text-align: left;
+    cursor: default;   /* 正常指针 */
+}
+#hea-nav-spfl ul li a,#hea-nav-spfl ul li span {
+    font-size: 14px;
+    color: #fff;
+}
+#hea-nav-spfl ul li a {
+    margin-left: 37px !important;
+}
+#hea-nav-spfl ul li a span { cursor: text;}
+#spfl-vz {    /* 标签'女装 /内衣' */
+    line-height: 15px;
+    padding-left: 0px !important
+}
+
+/* 商品分类右侧延伸栏 */
+#spfl-rig {  /* 延伸栏总容器 (女装/内衣)*/
+    display: none;
+    width: 850px;
+    height: 500px;
+    background: #fafafa;
+    position: absolute;
+    left: 220px;
+    top: 38px;
+    z-index: 997;
+}
+#spfl-rigo {  /* rigo和ul部分容器 */
+    width: 650px;
+    height: 70px;
+    background: #fff;
+}
+#spfl-rigo-h3 {   /* 标题容器 */
+    width: 117px;
+    height: inherit;
+}
+#spfl-rigo-h3 h3 {
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #000;
+}
+#spfl-rigo ul {   /* 右侧ul */
+    margin-top: -71px;
+    margin-left: 117px;
+    border-bottom: 1px dashed #dddddd;
+    width: 500px;
+    height: inherit;
+}
+#spfl-rigo ul li {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    cursor: default;
+}
+#spfl-rigo ul a {
+    font-size: 14px;
+    color: #464646;
+}
+#spfl-rigo ul a:hover { color: #e54278; }
+.h3-red { color:#e54278 !important; }
+.three-h3 {     /* 家居服  */
+    margin-left: 2px;
+    letter-spacing: 4px; 
+}
+
+#spfl-rigw {   /* rigw */
+    width: 650px;
+    height: 40px;
+    background: #fff;
+}
+#spfl-rigw-h3 {   /* 标题容器 */
+    width: 117px;
+    height: inherit;
+}
+#spfl-rigw-h3 h3 {
+    padding-top: 6px;
+    padding-left: 15px;
+    color: #000;
+}
+#spfl-rigw ul {   /* 右侧ul */
+    margin-top: -41px;
+    margin-left: 117px;
+    border-bottom: 1px dashed #dddddd;
+    width: 500px;
+    height: inherit;
+}
+#spfl-rigw ul li {
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    cursor: default;
+}
+#spfl-rigw ul a {
+    font-size: 14px;
+    color: #464646;
+}
+#spfl-rigw ul a:hover { color: #e54278; }
+
+/* 右侧品牌logo */
+#spfl-rigger {
+    width: 180px;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* 右底侧品牌logo */
+#spfl-rigger-foot {
+    width: 180px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* 男鞋/运动户外 */
+#ydhw-rig {
+    display: none;
+    width: 850px;
+    height: 500px;
+    background: #fafafa;
+    position: absolute;
+    left: 220px;
+    top: 38px;
+    z-index: 997;
+}
+#ydhw-rig #ydhw-rigo {  /* 当季流行 */
+    width: 650px;
+    height: 140px;
+    background: #fff;
+}
+#ydhw-rig #ydhw-rigo-h3 {   /* 标题容器 */
+    width: 117px;
+    height: inherit;
+}
+#ydhw-rig #ydhw-rigo-h3 h3 {
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #000;
+}
+#ydhw-rig #ydhw-rigo ul {   /* 右侧ul */
+    margin-top: -141px;
+    margin-left: 117px;
+    border-bottom: 1px dashed #dddddd;
+    width: 500px;
+    height: inherit;
+}
+#ydhw-rig #ydhw-rigo ul li {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    cursor: default;
+}
+#ydhw-rig #ydhw-rigo ul a {
+    font-size: 14px;
+    color: #464646;
+}
+#ydhw-rig #ydhw-rigo ul a:hover { color: #4581ef; }
+.h3-blue { color:#4581ef !important; }
+
+#ydhw-rig #spfl-rigo ul a:hover { color: #4581ef; }
+#ydhw-rig #spfl-rigw ul a:hover { color: #4581ef; }
+#ydhw-rig .nz-zxc { height: 180px; } /* 自行车标签高度 */
+#ydhw-rig .nz-zxc ul {
+    margin-top: -181px;
+    margin-left: 117px;
+    border: none;
+}

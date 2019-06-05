@@ -1,0 +1,225 @@
+/* 默认样式 */
+* { margin : 0px; padding: 0px; border: 0 auto; }
+body { 
+    color: #929292;
+    background: #f5f5f5;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    text-align: center;
+}
+a {
+	color: #929292;
+	font-size: 13px;
+	text-decoration: none;
+}
+input, select {
+	font-size: 16px;
+	vertical-align: middle;
+}
+textarea, input {
+	word-wrap: break-word;  /* ?  */
+	word-break: break-all;
+	padding:0px;
+}
+li { list-style-type: none; }
+img { border: 0 none; }
+
+/* 头部导航栏 */
+#nav-bar {
+    width: 100%;   /* auto */
+    height: 32px;
+    background: #f2f2f2;
+    border-bottom: 1px #e5e5e5 solid;
+}
+#nav-bar #bar-tarcontent {
+    width: 1300px;
+    height: inherit;
+    margin: 0px auto;
+}
+#bar-tarcontent, #bar-tarcontent a { font-size: 12px; }
+#bar-left {
+    margin-left: 20px;
+    width: 220px;
+	line-height: 32px;
+	float: left;
+}
+#bar-left li {
+    float: left;
+}
+#bar-left li a {
+    padding-left: 8px;
+    padding-right: 12px;
+}
+#bar-left li a:hover {
+    color: #fe1747;
+}
+#bar-left li:first-child {
+    margin-left: 0px;
+    padding-right: 12px;
+}
+#bar-right {
+    width: 660px;
+    float: right;
+}
+#bar-right ul { margin-left: 82px; }
+#bar-right li {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+    line-height: 32px;
+}
+#bar-right .rig-block { cursor: pointer;}
+#blk { position: relative; }
+#blkt { position: relative; }
+#blks { position: relative; }
+#blkf { position: relative; }
+
+#bar-right li:last-child a:hover {
+    color: #929292;
+}
+#bar-right li .listred {
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: bolder;
+    font-size: 13px;     /* 给span添加一个color颜色后hover属性在这个0中无效果 */
+}
+.rig-none a:hover {
+    color: #fe1747;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.rig-block ul { 
+    background: #ffffff;
+    border-left: 1px #e5e5e5 solid;
+    border-right: 1px #e5e5e5 solid;
+    border-bottom: 1px #e5e5e5 solid;
+    position: absolute;
+}
+#blaul li a,#blbul li a,#blcul li a,#bldul li a { color: #666666; }
+#blk ul {   /* 延伸栏 */
+    display: none;
+    width: 90px;
+    height: 65px;
+    top: 32px;
+    left: -83px;
+    z-index: 997;
+}
+#blkt ul {
+    display: none;
+    width: 77px;
+    height: 65px;
+    top: 32px;
+    left: -83px;
+    z-index: 997;
+}
+#blks ul {
+    display: none;
+    width: 130px;
+    height: 181px;
+    top: 32px;
+    left: -149px;
+    z-index: 997;
+}
+#bldul { display: none; }    /* ?放下面就出问题 */
+#blkf ul {
+    width: 1100px;
+    height: 156px;
+    top: 32px;
+    right: -1px;
+    z-index: 997;
+}
+#blks ul h3 { margin-left: -88px; margin-bottom: -7px; margin-top: 2px; color: #666666; }
+#blks ul li { line-height: 21px; }
+#blks ul .achr,#blks ul .bchr {  
+    width: 86%;
+    height: 0;
+    border-top: 1px #000 dashed; 
+}
+#blks ul .achr { margin: 93px auto -5px; }
+#blks ul .bchr { margin: 25px auto -5px; }
+#blbull:hover,#blbulw:hover { color: red !important; text-decoration: underline; }
+#blcul li a:hover { color: red !important; text-decoration: underline; }
+
+
+.bldul-left ul {
+    margin-top: -12px;
+    margin-right: 640px;
+    width: 460px !important;
+    height: 120px !important;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.bldul-left ul h1 { color: #f57717; }
+.bldul-left ul h1,.bldul-cont ul h1,.bldul-right ul h1 { 
+    margin-top: -3px;
+    margin-left: 21px;
+    font-size: 16px; 
+    font-weight: normal; 
+    text-align: left;
+}
+.bldul-left ul li a { 
+    padding-left: 14px;
+    padding-right: 12px;
+}
+.left-qycg { padding-left: 27px !important;padding-right: 0px !important; }
+.bldul-left ul li a:hover { color: #f57717 !important; text-decoration: underline; }
+.bldul-cont ul {
+    margin-top: -12px;
+    margin-right: 229px;
+    width: 410px !important;
+    height: 120px !important;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.bldul-cont ul h1 { color: #568ae6; padding-left: 5px; }
+.bldul-cont ul li a { 
+    padding-left: 20px;
+    padding-right: 18px;
+}
+.bldul-cont ul li a:hover { color: #568ae6 !important; text-decoration: underline; }
+.bldul-right ul {
+    margin-top: -12px;
+    margin-right: 9px;
+    width: 220px !important;
+    height: 120px !important;
+    border: none;
+}
+.bldul-right ul h1 { color: #909090; }
+.bldul-right ul li a { 
+    padding-left: 14px;
+    padding-right: 23px;
+}
+.bldul-right ul li a:hover { color: #6f6f6f !important; text-decoration: underline; }
+
+#rig-sjb { position: relative; }
+.sjb-tmapp { 
+    display: none;
+    width: 175px;
+    height: 215px;
+    background: url(F:\MyTMALL/img/TB1MDxDRpXXXXXUXFXXXXXXXXXX-175-215.gif);
+    position: absolute;
+    top: 28px;
+    left: -58px;
+    z-index: 997;
+    box-shadow: rgb(194, 194, 194) 0px 0px 7px 1px; /* 边框内阴影 x偏移 y偏移 阴影扩散大小 阴影大小 */
+}
+.sjb-tmapp::after {
+    content: "";
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color:transparent transparent #ffffff transparent;
+    border-style:solid dashed dashed dashed;
+    border-width: 7px;
+    position: absolute;
+    top: -14px; 
+    left: 79px;
+    z-index: 998;
+}

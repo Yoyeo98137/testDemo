@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清除浮动</title>
+    <style>
+    * { margin: 0; padding: 0; }
+    #cont {
+        width: 600px;
+        height: 700px;
+    }
+    #ma, #mb, #mc, #md, #me, #mf { 
+        float: left;
+    }
+    #ma { width: 600px; height: 50px; background: #ff8080; }
+    #mb { width: 100px; height: 200px; background: #00ff80; }
+    #mc { width: 400px; height: 100px; background: #804040; }
+    #md { width: 400px; height: 100px; background: #ff00ff; }
+    #me { width: 100px; height: 200px; background: #0080ff; }
+    #mf { width: 600px; height: 50px; background: #ff8080; }
+    .center-box {
+        overflow: hidden;
+        float: left;
+        width: 400px;
+    }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div id="ma"></div>
+        <div id="mb"></div>
+        <div class="center-box">
+            <div id="mc"></div>
+            <div id="md"></div>
+        </div>
+        <div id="me"></div>
+        <div id="mf"></div>
+    </div>
+</body>
+</html>
